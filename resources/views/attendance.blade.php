@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Swotah Attendance</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -13,9 +13,8 @@
 </head>
 <body style="background-color:#ffffff">
 @include('layout.adminnav')
-    <form class="container">
         @if(isset($all))
-
+            <div class="container">
             <table class="striped responsive-table">
                 <thead>
                     <th>Date</th>
@@ -100,30 +99,30 @@
         @endif
 
         @if(isset($email_only))
-                <form action="/attendancedetail">
-                    <select name="month">
-                        <option value="" disabled selected>Select a month</option>
-                        <option value = "01">Jan</option>
-                        <option value = "02">Feb</option>
-                        <option value = "03">Mar</option>
-                        <option value = "04">Apr</option>
-                        <option value = "05">May</option>
-                        <option value = "06">Jun</option>
-                        <option value = "07">Jul</option>
-                        <option value = "08">Aug</option>
-                        <option value = "09">Sep</option>
-                        <option value = "10">Oct</option>
-                        <option value = "11">Nov</option>
-                        <option value = "12">Dec</option>
-                    </select>
-                    <select name="year">
-                        <option value="" disabled selected>Select a year</option>
-                        @foreach($year as $y)
-                            <option value = {{$y->year}}>{{$y->year}}</option>
+                {{--<form action="/attendancedetail">--}}
+                    {{--<select name="month">--}}
+                        {{--<option value="" disabled selected>Select a month</option>--}}
+                        {{--<option value = "01">Jan</option>--}}
+                        {{--<option value = "02">Feb</option>--}}
+                        {{--<option value = "03">Mar</option>--}}
+                        {{--<option value = "04">Apr</option>--}}
+                        {{--<option value = "05">May</option>--}}
+                        {{--<option value = "06">Jun</option>--}}
+                        {{--<option value = "07">Jul</option>--}}
+                        {{--<option value = "08">Aug</option>--}}
+                        {{--<option value = "09">Sep</option>--}}
+                        {{--<option value = "10">Oct</option>--}}
+                        {{--<option value = "11">Nov</option>--}}
+                        {{--<option value = "12">Dec</option>--}}
+                    {{--</select>--}}
+                    {{--<select name="year">--}}
+                        {{--<option value="" disabled selected>Select a year</option>--}}
+                        {{--@foreach($year as $y)--}}
+                            {{--<option value = {{$y->year}}>{{$y->year}}</option>--}}
                             {{--{{dd($y)}}--}}
-                        @endforeach
-                    </select>
-                </form>
+                        {{--@endforeach--}}
+                    {{--</select>--}}
+                {{--</form>--}}
                 <table class="striped responsive-table">
                 <thead>
                 <th>Date</th>
@@ -204,7 +203,6 @@
                 </tbody>
             </table>
         @endif
-
     </div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

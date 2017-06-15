@@ -3,7 +3,7 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url('public/css/loginstyle.css')}}">
+    <link rel="stylesheet" href="{{url('css/loginstyle.css')}}">
 </head>
 <body>
 <div class="container white z-depth-2">

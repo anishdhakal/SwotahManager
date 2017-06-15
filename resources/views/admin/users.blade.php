@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Users</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url('public/css/loginstyle.css')}}">
+    <link rel="stylesheet" href="{{url('css/loginstyle.css')}}">
 </head>
 <body style="background-color:#ffffff">
 @include('layout.adminnav')
